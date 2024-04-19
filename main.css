@@ -9,6 +9,7 @@
 --transition: 1s cubic-bezier(.05, .5, 0, 1);
 }
 
+/*
 @font-face {
     font-family: kamerik-3d;
     src: url(/fonts/kamerik205-heavy.woff2);
@@ -19,6 +20,7 @@
     font-family:merriweather-italic-3d;
     src: url(/fonts/merriweather-regular-italic.woff2);
 }
+*/
 
 body {
     background-color: black;
@@ -87,13 +89,13 @@ body {
 }
 
 .hero-content {
-    font-size: calc(var(--index) * 1.8);
+    font-size: calc(var(--index) * 2);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: calc(var(--index) * .10);
     line-height: 1.35;
     margin-top: calc(var(--index) * 5);
-    
+    font-family: Cinzel;
 }
 
 .hero-content span {
@@ -104,22 +106,27 @@ body {
     text-transform: none;
     font-family: merriweather-italic-3d, sans-serif;
     letter-spacing: normal;
-    font-size: calc(var(--index)* .8);
+    font-size: calc(var(--index)* .9);
     line-height: 3;
+    font-family: Lora;
+    font-weight: 400;
 }
 
 
 .button-start {
-    font-family: Arial;
-    font-weight: 600;
+    font-family: Lora;
+    font-weight: 400;
     text-transform: uppercase;
     font-size: calc(var(--index) * .7);
-    letter-spacing: -.02vw;
-    padding:calc(var(--index) * .7) calc(var(--index) * 2);
+    letter-spacing: .1vw; 
+    padding:calc(var(--index) * .5) calc(var(--index) * 2);
     background-color: transparent;
     color: white;
-    border-radius: 10em;
+    /*
     border: rgb(255 255 255 / .4) 3px solid;
+     border-radius: .2em;
+    */
+    border: none;
     outline: none;
     cursor: pointer;
 }
